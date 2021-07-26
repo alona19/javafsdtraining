@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+
+
+
+</head>
+<style>
+
+body{
+border-style:groove;
+border:2px solid black;
+outline:red solid 10px;
+margin-top:20px;
+margin-down:20px;
+margin-left:20px;
+margin-right:20px;
+padding-top:20px;
+padding-down:20px;
+padding-left:20px;
+padding-right:20px;
+
+}
+
+</style>
+
+<body style="background-color:black;color:white">
+
+<script>
+
+/*function passTheData(){
+
+//var a=document.getElementById("fname1").value;
+//var b=10;
+localStorage.setItem("valuee",document.getElementById("fname1").value);
+return false;
+
+}*/
+
+
+function print(){
+	document.getElementById("result").innerHTML= document.write(document.getElementById("fname1").value +"  "+
+	document.getElementById("password").value)
+}
+
+</script>
+
+
+
+
+
+<h3 style="color:white" align="center">LOGIN HERE!!!</h3>
+<form action="Registration.html"  >
+username: <input type="text" id="fname1" name="fname">
+<br>
+<br>
+Password: <input type="password" id="password" name="password">
+<br>
+<br>
+<input type="submit" value="SUBMIT" onclick=" print();"/>
+<br>
+<br>
+</form>
+<a href="Create.html" style="color:white">create new account</a>
+<a href="Forget.html" style="color:white">&nbsp &nbsp foget password</a>
+</body>
+</html>

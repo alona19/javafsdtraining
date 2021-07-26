@@ -1,0 +1,75 @@
+@charset "ISO-8859-1";
+
+p{
+
+font-size:20px;
+font-family:"Copperplate", Fantasy	, serif;
+
+}
+li{
+font-size:20px;
+}
+a{
+font-size:19px;
+}
+h1{
+
+font-size:55px;
+text-shadow :2x 2x;
+width:100%;
+height:75px;
+
+}
+ul.a{
+font-family:"Copperplate", Fantasy	, serif;
+list-style-type:square
+}
+
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color:black;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
+
+
+
+
+body{
+border-style:groove;
+border:2px solid black;
+outline:red solid 10px;
+margin-top:20px;
+margin-down:20px;
+margin-left:20px;
+margin-right:20px;
+padding-top:20px;
+padding-down:20px;
+padding-left:20px;
+padding-right:20px;
+
+}
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 55%;
+  
+}
+
+.right {
+  width: 45%;
+  
+ 
+}
+input[type=text],input[type=email],input[type=number], input[type=date]{
+   width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  font-size:15px;
+}
+input[type=text]:focus, input[type=email]:focus,input[type=number]:focus,input[type=date]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+form{
+border-style:groove;
+font-size:17px;
+border:2px solid black;
+margin-top:20px;
+margin-down:0px;
+margin-left:20px;
+margin-right:20px;
+padding-top:20px;
+padding-down:0px;
+padding-left:20px;
+padding-right:20px;
+
+
+}
+.box{
+	border:2px solid black;
+	width:800px;
+
+}
+.docu{
+	font-size:20px;
+}
+
+.image {
+  /* The image used */
+  background-image: url("https://webrfree.com/wp-content/uploads/2018/09/White_Abstract_5241852.jpg");
+  min-height: 1200px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1700px 1800px;
+  position: relative;
+}
+.container {
+  
+  background-color: white;
+  
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color:blue;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  font-size:20px;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  
+}
+
+
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
