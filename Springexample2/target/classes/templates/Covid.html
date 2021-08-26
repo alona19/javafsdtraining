@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Insert title here</title>
+</head>
+<body>
+<table class="table table-bordered table-dark" >
+			<thead>
+				<tr>
+					<th>
+					
+							ID
+					</th>
+					<th>
+
+							FIRST_NAME
+					</th>
+					<th>
+
+							LAST_NAME
+					</th>
+					<th>
+
+							EMAIL				</th>
+							<th>
+
+							DOSES
+					</th>
+				
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="col : ${Covid}">
+					<td th:text="${col.id}"></td>
+					<td th:text="${col.firstName}"></td>
+					<td th:text="${col.lastName}"></td>
+					<td th:text="${col.email}"></td>
+					<td th:text="${col.Doses}"></td>
+					
+					
+				</tr>
+			</tbody>
+		</table>
+		<a th:href=@{/}>back</a>
+</body>
+</html>

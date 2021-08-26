@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class SpringController {
 @Autowired
-EmpService empservice;
+CovService covservice;
 @RequestMapping("/")
 public String index() {
 	return "index.html";
@@ -20,37 +20,37 @@ public String index() {
 }
 @GetMapping("/home")
 public String viewhomepage(Model model) {
-	model.addAttribute("listEmployees",empservice.getEmployees());
+	model.addAttribute("listEmployees",covservice.getEmployees());
 	return "home";
 	
 	
 }
-@GetMapping("/newempform")
+@GetMapping("/enquiryForm")
 public String showemployeeform(Model model) {
-	Emp employee=new Emp();
-	model.addAttribute("employee",employee);
-	return "newempform";
+	Cov cov=new Cov();
+	model.addAttribute("employee",cov);
+	return "enquiryForm";
 	
 }
 @PostMapping("/save")
-public String saveEmployee(@ModelAttribute("employee") Emp employee) {
-	empservice.saveEmployee(employee);
+public String saveEmployee(@ModelAttribute("employee") Cov cov) {
+	covservice.saveEmployee(cov);
 	return "redirect:/";
 	
 }
 @GetMapping("/showFormForUpdate/{id}")	
-public String showform(@PathVariable (value="id") long id, Model model ) {
+public String showform(@PathVariable (value="id") String id, Model model ) {
 	
-	Emp employee= empservice.getEmployeeById(id);
-	model.addAttribute("employee",employee);
+	Cov cov= covservice.getEmployeeById(id);
+	model.addAttribute("employee",cov);
 	return "updateform";
 	
 	
 }
 @GetMapping("/deleteEmployee/{id}")	
-public String deleteform(@PathVariable (value="id") long id ) {
+public String deleteform(@PathVariable (value="id") String id ) {
 	
-	this.empservice.deleteEmployeeById(id);
+	this.covservice.deleteEmployeeById(id);
 	
 	return "redirect:/";
 	
