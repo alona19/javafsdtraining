@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" th:href="@{/enquiry.css}" />
+  <style >
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+<ul>
+ 
+
+  <li><a th:href=@{aboutus} class="btn btn-primary" >ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>&nbsp;&nbsp;&nbsp;&nbsp;
+  <li><a th:href=@{contact} class="btn btn-primary">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+  <li><a th:href=@{enquiryForm} class="btn btn-primary" >VACCINATION FORM</a>&nbsp;&nbsp;&nbsp;&nbsp</li>
+</ul>
+
+<div class="login-box">
+  <h2>ENQUIRY FORM</h2>
+ <form action="#" th:action="@{/save}" th:object="${employee}"
+			method="POST">
+    <div class="user-box">
+      <input type="text" th:field="*{firstName}"
+				placeholder="First Name" required="">
+     
+    </div>
+    <div class="user-box">
+     <input type="text" th:field="*{lastName}"
+				placeholder="Last Name" required="">
+     
+    </div>
+     <div class="user-box">
+     <input type="text" th:field="*{email}"
+				placeholder=" Email" >
+     
+    </div>
+    <div class="user-box">
+  	<input type="text" th:field="*{vaccineCount}"
+				placeholder=" vaccineCount" >
+			
+				</div>
+				 <div class="user-box">
+  	<input type="text" th:field="*{hospital}"
+				placeholder=" hospital" >
+			
+				</div>
+   
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+ <button type="submit" class="btn btn-primary"> Save</button>
+    </a>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+
+.icon {
+	color: #0000ff;
+}
+.login {
+	background-image: url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.index {
+	background-image: url("https://images.unsplash.com/photo-1560582861-45078880e48e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.medicine {
+	background-image: url("https://images.unsplash.com/photo-1585435557343-3b092031a831?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.patient {
+	background-image: url("https://images.unsplash.com/photo-1611689102192-1f6e0e52df0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=805&q=80");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.admin {
+	background-image: url("https://kaboompics.com/cache/e/a/7/2/3/ea72357c0d91cba67342112f08c4f631d3e37b00.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.card {
+	background-color: #c0c0c0 ;
+	border-radius: 10px;
+}
+
+h1 {
+	font-family: 'Anton', sans-serif;
+}
+i {
+	color: #000000;
+}
