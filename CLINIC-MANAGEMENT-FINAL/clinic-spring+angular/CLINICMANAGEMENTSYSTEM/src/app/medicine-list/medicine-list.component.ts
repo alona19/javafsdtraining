@@ -1,0 +1,44 @@
+import { Component, OnInit } from '@angular/core';
+import { Medicine } from '../medicine';
+import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
+import { MedicineService } from '../medicine.service';
+
+@Component({
+  selector: 'app-medicine-list',
+  templateUrl: './medicine-list.component.html',
+  styleUrls: ['./medicine-list.component.css']
+})
+export class MedicineListComponent implements OnInit {
+
+  medicines!: Observable<Medicine[]>;
+
+  constructor(private medicineService: MedicineService,
+    private router: Router) {}
+
+  ngOnInit() {
+    this.reloadData();
+  }
+
+  reloadData() {
+    this.medicines = this.medicineService.getMedicineList();
+  }
+
+  deleteMedicine(id: number) {
+    this.medicineService.deleteMedicine(id)
+      .subscribe(
+        data => {
+          console.log(data);
+          this.reloadData();
+        },
+        error => console.log(error));
+  }
+
+  MedicineDetails(id: number){
+    this.router.navigate(['details', id]);
+  }
+
+  updateMedicine(id: number){
+    this.router.navigate(['updateM', id]);
+  }
+}
