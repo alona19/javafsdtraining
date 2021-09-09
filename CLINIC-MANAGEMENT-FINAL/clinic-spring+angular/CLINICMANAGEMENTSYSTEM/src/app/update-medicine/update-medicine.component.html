@@ -1,0 +1,26 @@
+<body>
+<h3>Update Medicine</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="medicine.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Price</label>
+      <input type="text" class="form-control" id="price" required [(ngModel)]="medicine.price" name="price">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Quantity</label>
+      <input type="text" class="form-control" id="quantity" required [(ngModel)]="medicine.quantity" name="quantity">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+    <div routerLink="/medicines" class="btn" routerLinkActive="active">
+      <button type="button" class="btn btn-primary" >BACK </button>
+      </div>
+  </form>
+</div>
+</body>
