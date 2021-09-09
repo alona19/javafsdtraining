@@ -1,0 +1,20 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css");
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+.btn {
+    padding: 20px 0px;
+  font-size: 20px;
+    border-radius: 10px;
+    width:50%;  
+    height: 100%;
+    
+}
+
+
+
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQjLI3Bew-heOz_3OYFDgKvLlb4TgzMhMmUw&usqp=CAU");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: 1300px 600px;
+   }
